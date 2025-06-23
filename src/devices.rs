@@ -165,6 +165,12 @@ pub mod atmega64 {
     include!(concat!(env!("OUT_DIR"), "/pac/atmega64.rs"));
 }
 
+/// [ATmega64m1](https://www.microchip.com/wwwproducts/en/ATmega64m1)
+#[cfg(feature = "atmega64m1")]
+pub mod atmega64m1 {
+    include!(concat!(env!("OUT_DIR"), "/pac/atmega64m1.rs"));
+}
+
 /// [ATmega644](https://www.microchip.com/wwwproducts/en/ATmega644)
 #[cfg(feature = "atmega644")]
 pub mod atmega644 {
